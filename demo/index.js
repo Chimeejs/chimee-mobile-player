@@ -3,7 +3,7 @@ var player;
 // 配置变化则销毁现有播放器，并重建新的播放器
 function rebuildPlayer (src, type, box, poster) {
 
-  player && player.destroy();
+  player && !player.destroyed && player.destroy();
   player = new ChimeeMobilePlayer({
     // 播放地址
     src: src,

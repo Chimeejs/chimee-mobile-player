@@ -1,6 +1,6 @@
 {
   "name": "chimee-mobile-player",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A complete set of H5 mobile player",
   "main": "lib/chimee-mobile-player.js",
   "module": "lib/chimee-mobile-player.mjs",
@@ -42,7 +42,9 @@
     "babel-runtime": "^6.26.0",
     "chimee": "^0.6.2",
     "chimee-helper": "^0.2.8",
-    "chimee-plugin-mobile-state": "0.0.1"
+    "chimee-plugin-gesture": "0.0.8",
+    "chimee-plugin-mobile-controlbar": "0.0.7",
+    "chimee-plugin-mobile-state": "0.0.6"
   },
   "devDependencies": {
     "babel-eslint": "^8.0.2",
@@ -51,8 +53,6 @@
     "babel-polyfill": "^6.26.0",
     "babel-preset-es2015-rollup": "^3.0.0",
     "babel-preset-latest": "^6.24.1",
-    "chimee-plugin-gesture": "0.0.8",
-    "chimee-plugin-mobile-controlbar": "0.0.6",
     "cssnano": "^3.10.0",
     "eslint": "^4.12.1",
     "eslint-plugin-jest": "^21.3.2",
