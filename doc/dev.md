@@ -83,7 +83,7 @@ TapRecognizer.prototype.defaults = {
 
 总结： tap 操作规则： 
 
-* 单个触电
+* 单个触点
 * 手指在屏幕的最长时间为 250 ms
 * 两次点击屏幕的最小间隔为 300 ms 
 * 最大距离为 9
@@ -255,7 +255,7 @@ pc 端的控制条迁移
 
      - 没有音轨的视频
 
-     - <video muted>
+     - ```<video muted>```
 
      - 可视区域内
 
