@@ -1,4 +1,4 @@
-# ChimeePlayer
+# ChimeeMobilePlayer
 
 这是基于[chimee](https://github.com/Chimeejs/chimee)集成的一套您可以直接使用的HTML5移动端播放器，提供有了默认样式。
 
@@ -17,7 +17,7 @@
 基于点播场景，可以这样使用：
 
 ```javascript
-new ChimeePlayer({
+new ChimeeMobilePlayer({
   wrapper: '#wrapper',  // video dom容器
   src: 'http://cdn.toxicjohann.com/lostStar.mp4',
   autoplay: true,
@@ -29,7 +29,7 @@ new ChimeePlayer({
 
 ```javascript
 // HLS 直播
-new ChimeePlayer({
+new ChimeeMobilePlayer({
   wrapper: '#wrapper',  // video dom容器
   src: 'http://chimee.org/xxx/fff.m3u8',
   isLive: true,
