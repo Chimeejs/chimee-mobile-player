@@ -243,11 +243,7 @@ SwipeRecognizer.prototype.defaults = {
 
      - 没有音轨的视频
 
-<<<<<<< HEAD
      - `<video muted>`
-=======
-     - ```<video muted>```
->>>>>>> f2b433cbaf386a2a4a70b9b3fcb4cbf2871323c0
 
      - 可视区域内
 
