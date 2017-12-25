@@ -8,7 +8,7 @@
 
 ## 安装
 
-首先根据您的业务场景，你可以直接将lib目录下适合的打包文件引入您的业务代码中，比如直接引用JS。
+首先根据您的业务场景，你可以直接将lib目录下适合的打包文件引入您的业务代码中，比如直接使用`<script src='./lib/chimee-mobile-player.browser.js'></script>`引用JS。
 
 或者您的项目基于nodejs环境构建的话，直接执行 `npm install chimee-mobile-player --save`，然后再在代码中`import ChimeeMobilePlayer from 'chimee-mobile-player';`即可。
 
