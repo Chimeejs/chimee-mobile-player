@@ -1,4 +1,4 @@
-# ChimeePlayer
+# ChimeeMobilePlayer
 
 这是基于[chimee](https://github.com/Chimeejs/chimee)集成的一套您可以直接使用的HTML5移动端播放器，提供有了默认样式。
 
@@ -8,7 +8,7 @@
 
 ## 安装
 
-首先根据您的业务场景，你可以直接将lib目录下适合的打包文件引入您的业务代码中，比如直接引用JS。
+首先根据您的业务场景，你可以直接将lib目录下适合的打包文件引入您的业务代码中，比如直接使用`<script src='./lib/chimee-mobile-player.browser.js'></script>`引用JS。
 
 或者您的项目基于nodejs环境构建的话，直接执行 `npm install chimee-mobile-player --save`，然后再在代码中`import ChimeeMobilePlayer from 'chimee-mobile-player';`即可。
 
@@ -17,11 +17,17 @@
 基于点播场景，可以这样使用：
 
 ```javascript
-new ChimeePlayer({
+new ChimeeMobilePlayer({
   wrapper: '#wrapper',  // video dom容器
   src: 'http://cdn.toxicjohann.com/lostStar.mp4',
   autoplay: true,
-  controls: true
+  controls: true,
+  playsInline: true,
+  preload: true,
+  x5VideoPlayerFullscreen: true,
+  x5VideoOrientation: true,
+  xWebkitAirplay: true,
+  muted: true
 });
 ```
 
@@ -29,14 +35,22 @@ new ChimeePlayer({
 
 ```javascript
 // HLS 直播
-new ChimeePlayer({
+new ChimeeMobilePlayer({
   wrapper: '#wrapper',  // video dom容器
   src: 'http://chimee.org/xxx/fff.m3u8',
   isLive: true,
   autoplay: true,
-  controls: true
+  controls: true,
+  playsInline: true,
+  preload: true,
+  x5VideoPlayerFullscreen: true,
+  x5VideoOrientation: true,
+  xWebkitAirplay: true,
+  muted: true
 });
 
 ```
+## 注意
+
 
 *希望您用着方便，有相应问题请随时反馈。*
