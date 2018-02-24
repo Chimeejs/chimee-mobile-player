@@ -27,7 +27,8 @@ new ChimeeMobilePlayer({
   x5VideoPlayerFullscreen: true,
   x5VideoOrientation: true,
   xWebkitAirplay: true,
-  muted: true
+  muted: true,
+  // removeInnerPlugins: ['chimeeMobiControlbar', 'chimeeState'] // 需要移除的插件
 });
 ```
 
@@ -46,12 +47,15 @@ new ChimeeMobilePlayer({
   x5VideoPlayerFullscreen: true,
   x5VideoOrientation: true,
   xWebkitAirplay: true,
-  muted: true
+  muted: true,
+  // removeInnerPlugins: ['chimeeMobiControlbar', 'chimeeState'] // 需要移除的插件
 });
 
 ```
+
 ## 注意
 
+0. 默认配置是自带控制条和中部状态的，通过配置可以去掉
 1. 暂不支持在该元素上使用缩放 zoom / scale
 2. ios 上的声音和机器的声音同步，并非设置 volume 可以改变，muted 是有效果的。
 3. 在 chimee@0.8.3 之后将 playsline / x5VideoPlayerType 分开配置。

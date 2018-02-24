@@ -22,7 +22,7 @@ function rebuildPlayer (src, type, box, poster) {
     x5VideoOrientation: true,
     xWebkitAirplay: true,
     muted: true,
-    removeInnerPlugins: ['chimeeMobiControlbar']
+    // removeInnerPlugins: ['chimeeMobiControlbar', 'chimeeState']
   });
 
   try{
@@ -32,7 +32,6 @@ function rebuildPlayer (src, type, box, poster) {
   }catch(e) {
     console.warn('不支持WeixinJSBridge')
   }
-  
 }
 
 // 快捷按键操作
