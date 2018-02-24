@@ -52,5 +52,8 @@ new ChimeeMobilePlayer({
 ```
 ## 注意
 
+1. 暂不支持在该元素上使用缩放 zoom / scale
+2. ios 上的声音和机器的声音同步，并非设置 volume 可以改变，muted 是有效果的。
+3. 在 chimee@0.8.3 之后将 playsline / x5VideoPlayerType 分开配置。
 
 *希望您用着方便，有相应问题请随时反馈。*

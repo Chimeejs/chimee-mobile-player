@@ -1,6 +1,6 @@
 {
   "name": "chimee-mobile-player",
-  "version": "0.0.3",
+  "version": "0.0.5",
   "description": "A complete set of H5 mobile player",
   "main": "lib/chimee-mobile-player.js",
   "module": "lib/chimee-mobile-player.mjs",
@@ -40,11 +40,12 @@
   "homepage": "https://github.com/Chimeejs/chimee-mobile-player#readme",
   "dependencies": {
     "babel-runtime": "^6.26.0",
-    "chimee": "^0.8.4",
+    "chimee": "^0.9.2",
     "chimee-helper": "^0.2.8",
     "chimee-plugin-gesture": "0.0.8",
     "chimee-plugin-mobile-controlbar": "0.0.8",
-    "chimee-plugin-mobile-state": "0.0.9"
+    "chimee-plugin-mobile-state": "0.0.9",
+    "es-fullscreen": "^0.2.5"
   },
   "devDependencies": {
     "babel-eslint": "^8.0.2",

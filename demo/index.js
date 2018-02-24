@@ -21,7 +21,8 @@ function rebuildPlayer (src, type, box, poster) {
     x5VideoPlayerFullscreen: true,
     x5VideoOrientation: true,
     xWebkitAirplay: true,
-    muted: true
+    muted: true,
+    removeInnerPlugins: ['chimeeMobiControlbar']
   });
 
   try{
