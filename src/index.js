@@ -1,5 +1,5 @@
 import Chimee from 'chimee';
-import { isObject, isArray, UAParser } from 'chimee-helper';
+import { isObject, isArray, UAParser, Log } from 'chimee-helper';
 import chimeeControl from 'chimee-plugin-mobile-controlbar';
 import chimeeState from 'chimee-plugin-mobile-state';
 import gestureFactory from 'chimee-plugin-gesture';
@@ -37,6 +37,16 @@ class ChimeeMobilePlayer extends Chimee {
     config.box = config.box === undefined ? 'native' : config.box;
 
     super(config);
+    this.ready.then(() => {
+      this.hlsWarn(this.box);
+      this.$watch('box', box => this.hlsWarn(box));
+    });
+  }
+
+  hlsWarn(box) {
+    if (box === 'hls') {
+      Log.warn('chimee-mobile-player', 'Mobile support m3u8, you do not need to use hls box.');
+    }
   }
 }
 // 暴露手势工厂方法
