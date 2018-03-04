@@ -5,7 +5,7 @@ const config = base('umd');
 export default Object.assign(config, {
   output: {
     format: 'umd',
-    file: 'lib/chimee-player.browser.js',
+    file: 'lib/chimee-mobile-player.browser.js',
     banner,
     name: camelize(name, true),
   },
