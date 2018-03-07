@@ -60,4 +60,22 @@ new ChimeeMobilePlayer({
 2. ios 上的声音和机器的声音同步，并非设置 volume 可以改变，muted 是有效果的。
 3. 在 chimee@0.8.3 之后将 playsline / x5VideoPlayerType 分开配置。
 
+## FAQ
+
+### 为什么我在移动端播放没有音量？
+
+注意下是否设置了 `muted` 为 `true`。示例中的 muted 均设置了 true 值。
+
+但是在移动播放器中，一般只允许静音的视频进行自动播放，因此如果需要自动播放的，最好将 muted 设为 true。
+
+### 为什么我不能条件音量？
+
+如果你所持有的是 iOS 设备，你会发现声音是和机器的声音同步的，并非设置 volume 可以改变的。
+
+### 预装的内部插件可以去掉吗？
+
+其实 chimee-mobile-player 预装的插件并不多，只有 chimee-plugin-mobile-controlbar,  chimee-plugin-mobile-state。
+
+如果需要的话，可以自行利用 chimee 进行搭建也可以利用 removeInnerPlugins 进行。
+
 *希望您用着方便，有相应问题请随时反馈。*
