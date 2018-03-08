@@ -62,6 +62,10 @@ new ChimeeMobilePlayer({
 
 ## FAQ
 
+### 为什么移动端不能播放 m3u8 直播流？
+
+移动端是原生支持 m3u8 播放的，无需使用 `chimee-kernel-hls` 进行编解码。如果你发现使用 chimee 不能顺利播放直播流。请注意 `box` 值是否有设为 `native`。
+
 ### 为什么我在移动端播放没有音量？
 
 注意下是否设置了 `muted` 为 `true`。示例中的 muted 均设置了 true 值。
