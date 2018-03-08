@@ -22,6 +22,10 @@ function rebuildPlayer (src, type, box, poster) {
     x5VideoOrientation: true,
     xWebkitAirplay: true,
     muted: true,
+    // box: 'hls',
+    // kernels: {
+    //   hls: ChimeeKernelHls
+    // }
     // removeInnerPlugins: ['chimeeMobiControlbar', 'chimeeState']
   });
 
