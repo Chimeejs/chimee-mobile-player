@@ -40,8 +40,8 @@ test('config box', () => {
     },
   });
   expect(spy).not.toHaveBeenCalled();
-  player.ready.then(() => {   
-    player.box = 'hls'; 
+  player.ready.then(() => {
+    player.box = 'hls';
     expect(spy).toHaveBeenCalled();
   });
 });
