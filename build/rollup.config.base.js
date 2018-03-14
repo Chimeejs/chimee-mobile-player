@@ -1,4 +1,4 @@
-const { version, name, author, license, dependencies } = require('../package.json');
+const { version, name, author, license } = require('../package.json');
 import { camelize } from 'toxic-utils';
 export const banner = `
 /** ${camelize(name)}

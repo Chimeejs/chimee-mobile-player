@@ -1,7 +1,7 @@
 import Chimee from 'chimee';
 import { isObject, isArray, UAParser, Log } from 'chimee-helper';
-import chimeeControl from 'chimee-plugin-mobile-controlbar/src';
-import chimeeState from 'chimee-plugin-mobile-state/src';
+import chimeeControl from 'chimee-plugin-mobile-controlbar';
+import chimeeState from 'chimee-plugin-mobile-state';
 import gestureFactory from 'chimee-plugin-gesture';
 import { uiIsAvailable, reduceArray } from './util.js';
 import './main.css';
