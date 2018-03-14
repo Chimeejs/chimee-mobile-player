@@ -1,4 +1,4 @@
-const { version, name, author, license, dependencies } = require('../package.json');
+const { version, name, author, license } = require('../package.json');
 import { camelize } from 'toxic-utils';
 export const banner = `
 /** ${camelize(name)}
@@ -138,7 +138,7 @@ const babelConfig = {
     babelrc: false,
   },
 };
-// const externalRegExp = new RegExp(Object.keys(dependencies).join('|'));
+// const externalRegExp = new RegExp(Object.key).join('|'));
 // const externalRegExp = new RegExp(/chimee-helper/);
 export default function(mode) {
   const config = {
