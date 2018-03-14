@@ -12,6 +12,10 @@ import resolve from 'rollup-plugin-node-resolve';
 import commonjs from 'rollup-plugin-commonjs';
 import replace from 'rollup-plugin-replace';
 import visualizer from 'rollup-plugin-visualizer';
+import string from 'rollup-plugin-string';
+
+import postcss from 'rollup-plugin-postcss';
+import cssnano from 'cssnano';
 
 const babelConfig = {
   common: {
@@ -24,10 +28,15 @@ const babelConfig = {
       }],
       'stage-0',
     ],
-    exclude: 'node_modules/**',
     plugins: [
+      'transform-decorators-legacy',
       'external-helpers',
       'transform-runtime',
+    ],
+    include: [
+      'src',
+      'node_modules/chimee-plugin-mobile-controlbar/**',
+      'node_modules/chimee-plugin-mobile-state/**',
     ],
     externalHelpers: true,
     runtimeHelpers: true,
@@ -43,8 +52,13 @@ const babelConfig = {
       }],
       'stage-0',
     ],
-    exclude: 'node_modules/**',
+    include: [
+      'src',
+      'node_modules/chimee-plugin-mobile-controlbar/**',
+      'node_modules/chimee-plugin-mobile-state/**',
+    ],
     plugins: [
+      'transform-decorators-legacy',
       'external-helpers',
       'transform-runtime',
     ],
@@ -62,8 +76,14 @@ const babelConfig = {
       }],
       'stage-0',
     ],
-    exclude: 'node_modules/**',
+    include: [
+      'src',
+      'node_modules/chimee-plugin-mobile-controlbar/**',
+      'node_modules/chimee-plugin-mobile-state/**',
+    ],
+    // exclude: /node_modules\/(?!(chimee-plugin-mobile-controlbar|chimee-plugin-mobile-state)\/).*/,
     plugins: [
+      'transform-decorators-legacy',
       'external-helpers',
       'transform-runtime',
     ],
@@ -81,8 +101,13 @@ const babelConfig = {
       }],
       'stage-0',
     ],
-    exclude: 'node_modules/**',
+    include: [
+      'src',
+      'node_modules/chimee-plugin-mobile-controlbar/**',
+      'node_modules/chimee-plugin-mobile-state/**',
+    ],
     plugins: [
+      'transform-decorators-legacy',
       'external-helpers',
       'transform-runtime',
     ],
@@ -100,22 +125,38 @@ const babelConfig = {
       }],
       'stage-0',
     ],
-    exclude: 'node_modules/**',
+    include: [
+      'src',
+      'node_modules/chimee-plugin-mobile-controlbar/**',
+      'node_modules/chimee-plugin-mobile-state/**',
+    ],
     plugins: [
+      'transform-decorators-legacy',
       'external-helpers',
     ],
     runtimeHelpers: true,
     babelrc: false,
   },
 };
-const externalRegExp = new RegExp(Object.keys(dependencies).join('|'));
+// const externalRegExp = new RegExp(Object.keys(dependencies).join('|'));
+// const externalRegExp = new RegExp(/chimee-helper/);
 export default function(mode) {
   const config = {
     input: 'src/index.js',
-    external(id) {
-      return !/min|umd|iife/.test(mode) && externalRegExp.test(id) && !/\.css$/.test(id);
-    },
+    // external(id) {
+    //   return !/min|umd|iife/.test(mode) && externalRegExp.test(id) && !/\.css$/.test(id);
+    // },
     plugins: [
+      string({
+        include: '**/*.svg',
+      }),
+      postcss({
+        plugins: [
+          cssnano(),
+        ],
+        extensions: [ '.css' ],
+        extract: true,
+      }),
       babel(babelConfig[mode]),
       resolve(),
       commonjs(),

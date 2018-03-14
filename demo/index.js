@@ -22,7 +22,7 @@ function rebuildPlayer (src, type, box, poster) {
     x5VideoOrientation: true,
     xWebkitAirplay: true,
     muted: true,
-    // box: 'hls',
+    box: 'native',
     // kernels: {
     //   hls: ChimeeKernelHls
     // }

@@ -1,9 +1,11 @@
 import Chimee from 'chimee';
 import { isObject, isArray, UAParser, Log } from 'chimee-helper';
-import chimeeControl from 'chimee-plugin-mobile-controlbar';
-import chimeeState from 'chimee-plugin-mobile-state';
+import chimeeControl from 'chimee-plugin-mobile-controlbar/src';
+import chimeeState from 'chimee-plugin-mobile-state/src';
 import gestureFactory from 'chimee-plugin-gesture';
 import { uiIsAvailable, reduceArray } from './util.js';
+import './main.css';
+
 const DEFAULT_DISABLE_UA = [ 'UCBrowser', '360Browser', 'QQBrowser' ];
 const innerPlugins = [
   chimeeControl.name,
