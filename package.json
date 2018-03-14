@@ -42,8 +42,8 @@
     "chimee": "^0.9.5",
     "chimee-helper": "^0.2.8",
     "chimee-plugin-gesture": "0.0.12",
-    "chimee-plugin-mobile-controlbar": "0.0.9",
-    "chimee-plugin-mobile-state": "0.0.13",
+    "chimee-plugin-mobile-controlbar": "git+https://github.com/Chimeejs/chimee-plugin-mobile-controlbar.git",
+    "chimee-plugin-mobile-state": "git+https://github.com/Chimeejs/chimee-plugin-mobile-state.git",
     "es-fullscreen": "^0.3.0"
   },
   "devDependencies": {
