@@ -1,6 +1,6 @@
 {
   "name": "chimee-mobile-player",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "description": "A complete set of H5 mobile player",
   "main": "lib/chimee-mobile-player.js",
   "module": "lib/chimee-mobile-player.mjs",
@@ -8,7 +8,7 @@
   "browser": "lib/chimee-mobile-player.browser.js",
   "scripts": {
     "test": "jest --coverage",
-    "start": "rollup -c build/rollup.config.dev.js -w",
+    "start": "rollup -c build/rollup.config.umd.js -w",
     "lint": "eslint . --fix",
     "precommit": "npm run lint",
     "prepublishOnly": "npm t && pkg-ok",
@@ -97,7 +97,7 @@
       "\\.svg$": "identity-obj-proxy"
     },
     "transformIgnorePatterns": [
-      "/node_modules\/(?!(chimee-plugin-mobile-controlbar|chimee-plugin-mobile-state)\/).*/"
+      "/node_modules/(?!(chimee-plugin-mobile-controlbar|chimee-plugin-mobile-state)/).*/"
     ],
     "transform": {
       ".*": "babel-jest"

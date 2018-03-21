@@ -16,8 +16,7 @@
       ],
       "plugins": [
         "transform-decorators-legacy",
-        "transform-es2015-modules-commonjs",
-        "dynamic-import-node"
+        "transform-es2015-modules-commonjs"
       ]
     }
   }

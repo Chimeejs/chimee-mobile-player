@@ -1,3 +1,4 @@
+new VConsole();
 var player;
 
 // 配置变化则销毁现有播放器，并重建新的播放器
@@ -73,3 +74,6 @@ function getSDLiveHlsUrl(sn, cbk){
 getSDLiveHlsUrl('3'+'6052770915', function(hls, poster){
   $('button[data-type="live"]').attr('data-src',hls).attr('data-poster', poster);
 });
+player.$watch('isFullscreen', function () {
+  console.log(111);
+})

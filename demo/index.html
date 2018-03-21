@@ -8,6 +8,33 @@
     <meta name="mobile-web-app-capable" content="yes">
     <link rel="stylesheet" type="text/css" href="./index.css">
     <link rel="stylesheet" href="../lib/chimee-mobile-player.browser.css">
+    <style>
+        *::-webkit-media-controls-panel {
+            display: none!important;
+            -webkit-appearance: none;
+            }
+
+            /* Old shadow dom for play button */
+
+            *::-webkit-media-controls-play-button {
+            display: none!important;
+            -webkit-appearance: none;
+            }
+
+            /* New shadow dom for play button */
+
+            /* This one works! */
+
+            *::-webkit-media-controls-start-playback-button {
+            display: none!important;
+            -webkit-appearance: none;
+            }
+
+            video .media-controls-container{
+                display: none;
+            }
+                
+    </style>
 </head>
 <body>
 
@@ -46,7 +73,8 @@
         <video tabindex="-1"></video>
     </section>
     <script src="../lib/chimee-mobile-player.browser.js"></script>
-    <script src="https://s.ssl.qhres.com/static/af3c1d4b462cc178/jquery.js" ></script>
+    <script src="https://s.ssl.qhres.com/static/af3c1d4b462cc178/jquery.js"></script>
+    <script src="https://s5.ssl.qhres.com/static/588b46b97caa0749.js"></script>
     <script src="./index.js"></script>
 </body>
 </html>
