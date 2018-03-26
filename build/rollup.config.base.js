@@ -23,7 +23,7 @@ const babelConfig = {
       [ 'env', {
         modules: false,
         targets: {
-          browsers: [ 'last 2 versions', 'not ie <= 8' ],
+          browsers: [ '> 1%', 'not ie <= 8' ],
         },
       }],
       'stage-0',
@@ -34,7 +34,7 @@ const babelConfig = {
       'transform-runtime',
     ],
     include: [
-      'src',
+      'src/**',
       'node_modules/chimee-plugin-mobile-controlbar/**',
       'node_modules/chimee-plugin-mobile-state/**',
     ],
@@ -53,7 +53,7 @@ const babelConfig = {
       'stage-0',
     ],
     include: [
-      'src',
+      'src/**',
       'node_modules/chimee-plugin-mobile-controlbar/**',
       'node_modules/chimee-plugin-mobile-state/**',
     ],
@@ -71,13 +71,13 @@ const babelConfig = {
       [ 'env', {
         modules: false,
         targets: {
-          browsers: [ 'last 2 versions', 'not ie <= 8' ],
+          browsers: [ 'last 2 version', 'not ie <= 8' ],
         },
       }],
       'stage-0',
     ],
     include: [
-      'src',
+      'src/**',
       'node_modules/chimee-plugin-mobile-controlbar/**',
       'node_modules/chimee-plugin-mobile-state/**',
     ],
@@ -102,7 +102,7 @@ const babelConfig = {
       'stage-0',
     ],
     include: [
-      'src',
+      'src/**',
       'node_modules/chimee-plugin-mobile-controlbar/**',
       'node_modules/chimee-plugin-mobile-state/**',
     ],
@@ -126,7 +126,7 @@ const babelConfig = {
       'stage-0',
     ],
     include: [
-      'src',
+      'src/**',
       'node_modules/chimee-plugin-mobile-controlbar/**',
       'node_modules/chimee-plugin-mobile-state/**',
     ],
