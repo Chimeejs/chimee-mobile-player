@@ -1,5 +1,5 @@
 import Chimee from 'chimee';
-import { isObject, isArray, UAParser, Log } from 'chimee-helper';
+import { isObject, isArray, Log } from 'chimee-helper';
 import chimeeControl from 'chimee-plugin-mobile-controlbar/src';
 import chimeeState from 'chimee-plugin-mobile-state/src';
 import gestureFactory from 'chimee-plugin-gesture';
