@@ -24,6 +24,9 @@ function rebuildPlayer (src, type, box, poster) {
     xWebkitAirplay: true,
     muted: true,
     box: 'native',
+    disableUA: [
+      'Mozilla/5.0 (Linux; Android 4.4.2; HM NOTE 1TD Build/KOT49H; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/62.0.3202.97 Mobile Safari/537.36',
+    ]
     // kernels: {
     //   hls: ChimeeKernelHls
     // }

@@ -4,7 +4,7 @@ import chimeeControl from 'chimee-plugin-mobile-controlbar/src';
 import chimeeState from 'chimee-plugin-mobile-state/src';
 import gestureFactory from 'chimee-plugin-gesture';
 import { uiIsAvailable, reduceArray } from './util.js';
-const DEFAULT_DISABLE_UA = [ 'UCBrowser', '360Browser', 'QQBrowser' ];
+const DEFAULT_DISABLE_UA = [];
 const innerPlugins = [
   chimeeControl.name,
   chimeeState.name,
@@ -28,8 +28,7 @@ class ChimeeMobilePlayer extends Chimee {
   constructor(config) {
     if (!isObject(config)) throw new TypeError('You must pass an Object as config when you new ChimeePlayer');
     const defaultDisableUA = config.disableUA === undefined ? DEFAULT_DISABLE_UA : config.disableUA;
-    const ua = new UAParser().getResult();
-    const isUIAvailable = uiIsAvailable(defaultDisableUA, ua);
+    const isUIAvailable = uiIsAvailable(defaultDisableUA, window.navigator.userAgent);
 
     // 添加UI插件
     if (isUIAvailable) handlePlugins(config);
