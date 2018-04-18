@@ -1,6 +1,6 @@
 {
   "name": "chimee-mobile-player",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "A complete set of H5 mobile player",
   "main": "lib/chimee-mobile-player.js",
   "module": "lib/chimee-mobile-player.mjs",
@@ -58,6 +58,7 @@
     "babel-preset-env": "^1.6.1",
     "babel-preset-stage-0": "^6.24.1",
     "babel-runtime": "^6.26.0",
+    "chimee": "^0.9.5",
     "chimee-kernel-hls": "^1.3.0",
     "cssnano": "^3.10.0",
     "eslint": "^4.12.1",

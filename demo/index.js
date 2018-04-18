@@ -15,10 +15,10 @@ function rebuildPlayer (src, type, box, poster) {
     // dom容器
     wrapper: '#wrapper',
     // video
-    autoplay: true,
+    autoplay: false,
     controls: true,
     playsInline: true,
-    preload: true,
+    preload: 'none',
     x5VideoPlayerFullscreen: true,
     x5VideoOrientation: true,
     xWebkitAirplay: true,
