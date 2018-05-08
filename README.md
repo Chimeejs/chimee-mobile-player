@@ -85,4 +85,7 @@ new ChimeeMobilePlayer({
 
 如果需要的话，可以自行利用 chimee 进行搭建也可以利用 removeInnerPlugins 进行。
 
+### 注意， 注意， 注意
+如果要兼容低级手机浏览器的话， 需要引入 babel-polyfill
+
 *希望您用着方便，有相应问题请随时反馈。*
