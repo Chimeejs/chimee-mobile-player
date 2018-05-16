@@ -1,6 +1,6 @@
 {
   "name": "chimee-mobile-player",
-  "version": "0.2.4",
+  "version": "0.2.5",
   "description": "A complete set of H5 mobile player",
   "main": "lib/chimee-mobile-player.js",
   "module": "lib/chimee-mobile-player.mjs",
