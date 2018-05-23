@@ -25,7 +25,7 @@ new ChimeeMobilePlayer({
   playsInline: true,
   preload: 'auto',
   x5VideoPlayerFullscreen: true,
-  x5VideoOrientation: true,
+  x5VideoOrientation: 'landscape|portrait',
   xWebkitAirplay: true,
   muted: true,
   // removeInnerPlugins: ['chimeeMobiControlbar', 'chimeeState'] // 需要移除的插件
@@ -45,7 +45,7 @@ new ChimeeMobilePlayer({
   playsInline: true,
   preload: 'auto',
   x5VideoPlayerFullscreen: true,
-  x5VideoOrientation: true,
+  x5VideoOrientation: 'landscape|portrait',
   xWebkitAirplay: true,
   muted: true,
   disableUA: ['Mozilla/5.0 (Linux; Android 4.4.2; HM NOTE 1TD Build/KOT49H; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/62.0.3202.97 Mobile Safari/537.36']
