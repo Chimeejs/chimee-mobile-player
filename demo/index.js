@@ -19,6 +19,7 @@ function rebuildPlayer (src, type, box, poster) {
     controls: true,
     playsInline: true,
     preload: 'none',
+    x5VideoPlayerType: 'h5',
     x5VideoPlayerFullscreen: true,
     x5VideoOrientation: true,
     xWebkitAirplay: true,
