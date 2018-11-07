@@ -1,5 +1,7 @@
 # ChimeeMobilePlayer
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/Chimeejs/chimee-mobile-player.svg)](https://greenkeeper.io/)
+
 这是基于[chimee](https://github.com/Chimeejs/chimee)集成的一套您可以直接使用的HTML5移动端播放器，提供有了默认样式。
 
 并集成了以下官方UI插件：
