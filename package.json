@@ -1,6 +1,6 @@
 {
   "name": "chimee-mobile-player",
-  "version": "0.2.8",
+  "version": "0.3.0",
   "description": "A complete set of H5 mobile player",
   "main": "lib/chimee-mobile-player.js",
   "module": "lib/chimee-mobile-player.mjs",
@@ -11,7 +11,6 @@
     "start": "rollup -c build/rollup.config.umd.js -w",
     "lint": "eslint . --fix",
     "precommit": "npm run lint",
-    "prepublishOnly": "npm t && pkg-ok",
     "build": "npm run b-common && npm run b-es && npm run b-umd && npm run b-min",
     "b-common": "rollup -c build/rollup.config.common.js",
     "b-es": "rollup -c build/rollup.config.es.js",
